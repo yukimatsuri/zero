@@ -1,0 +1,19 @@
+git branch topic-*
+git checkout topic-*
+// do some work...
+git add -u
+git commit -m "...
+// When you command `git log`,
+// this commit log is on.
+// do some another work...
+git add -u
+git commit -m "...
+// brah, brah, brah,... 
+
+// Now, we finished tasks which is to be done in this topic branch.
+// Let's merge.
+git checkout master
+git merge --no-ff topic-*
+
+// Then, topic-* branch is now ready to be deleted.
+git branch -d topic-*
