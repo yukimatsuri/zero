@@ -10,3 +10,7 @@ git add -u
 git commit -m "...
 // brah, brah, brah,... 
 
+// Now, we finished tasks which is to be done in this topic branch.
+// Let's merge.
+git checkout master
+git merge --no-ff topic-*
