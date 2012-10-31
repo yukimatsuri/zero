@@ -14,3 +14,6 @@ git commit -m "...
 // Let's merge.
 git checkout master
 git merge --no-ff topic-*
+
+// Then, topic-* branch is now ready to be deleted.
+git branch -d topic-*
